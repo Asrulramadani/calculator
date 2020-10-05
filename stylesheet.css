@@ -14,7 +14,7 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px 30px;
     box-shadow: 3px 10px 15px rgba(0,0,0,0.3);
 }
 
