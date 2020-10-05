@@ -1,55 +1,89 @@
+body {
+    background-color: rgb(195, 240, 255);
+}
+
 .calculator {
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-    width: 400px;
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 10px 15px rgba(0,0,0,0.3);
 }
 
 .calculator-screen {
-    width: 100%;
-    height: 100px;
-    background-color: #252525;
-    color: #fff;
+    padding: 30px 10px 20px;
+    font-size: 34px;
     text-align: right;
-    font-size: 36px;
+    outline: none;
     border: none;
-    padding: 0 20px;
-    box-sizing: border-box;
+    background-color: white;
 }
 
 .calculator-keys {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
+    width: 100%;
     display: flex;
+    
 }
 
 button {
-    height: 80px;
-    background-color: gray;
-    border: 1px solid black;
-    font-size: 32px;
-    color: #fff;
-    width: 25%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     outline: none;
+    cursor: pointer;
+    user-select: none;
+    
 }
 
-button:hover {
-    background-color: darkgray;
+.operator.bagi {
+    background-color: #20b2aa;
 }
 
-.all-clear,
-.zero-btn {
-    width: 50%;
+.operator.kali {
+    background-color: #ffa500;
 }
 
-.operator,
+.operator.kurang {
+    background-color: #f08080;
+}
+
+.operator.tambah {
+    background-color: #7d93e0;
+}
+
 .equal-sign {
-    background-color: orange;
+    background-color: #9477af;
 }
 
-.operator:hover,
-.equal-sign:hover {
-    background-color: darkorange;
+.number, .empety, .decimal {
+    background-color: transparent;
+}
+
+.decimal {
+    font-weight: 700;
 }
